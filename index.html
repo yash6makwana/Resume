@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assert/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery and jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+    </style>
+    <script>
+        $(function() {
+            $("#tabs-1").tabs();
+        });
+
+        $(function () {
+            'use strict';
+            (function autoChange() {
+              $('.notes .note_list li.active').each(function () {
+                if (! $(this).is(':last-of-type')) {
+                  $(this).delay(1000).fadeOut(1000, function () {
+                    $(this).removeClass('active').next().addClass('active').fadeIn(1000);
+                    autoChange();
+                  });
+                } else {
+                  $(this).delay(1000).fadeOut(1000, function () {
+                    $(this).removeClass('active').parent('.note_list').find('li:eq(0)').addClass('active').fadeIn(1000);
+                    autoChange();
+                  });
+                }
+              });
+            })();
+          });
+    </script>
+</head>
+<body>
+
+    <div class="cursor"></div>
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid logo">
+            <img src="assert/image/yash_makwana.png" alt="Logo" class="navbar-brand"><b></b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end gap-5" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 pa">
+                    <li class="nav-item navi">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Start background concept -->
+
+        <div class="container">
+            <div class=" row" >
+                
+                <div class="col-sm-8 col-12 mk">
+                    <div class="mt-5">
+                        <span class="subtitle"><b>WELCOME TO MY WORLD</b></span>
+                        <span class="subtitle1"><b>Hi,</b><b style="color: red;"> I’m Yash Makwana <br>
+        
+                             <div class="notes">
+                                <h3 class="note_title"></h3>
+                                <ul class="note_list">
+                                  <li class="active pp"><b> Professional Coder.</b></li>
+                                  <li><b class="pp"> Designer.</b></li>
+                                  <li><b class="pp"> Devloper.</b></li>
+                                </ul>
+                              </div>
+                            </b>
+                            
+                        <span class="desc mt-3">
+                            I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.
+                        </span>    
+                    </div>
+                    <div class="mt-2">
+                        <span class="title text-left mt-5">BEST SKILL ON</span>
+                        <ul class="d-flex lp p-0 flex-wrap">
+                            <li class="pl">
+                                <img src="assert/image/html.png" alt="" srcset=""  class="m-1" >
+                            </li>
+                            <li class="pl ">
+                                <img src="assert/image/css.png" alt="" srcset="" class="m-1" >
+                            </li>
+                            <li class="pl ">
+                                <img src="assert/image/java.png" alt="" srcset="" class="m-1">
+                            </li>
+                            <li class="pl ">
+                                <img src="assert/image/jquery.png" alt="" srcset="" class="m-1">
+                            </li>
+                            <li class="pl ">
+                                <img src="assert/image/js.png" alt="" srcset="" class="m-1">
+                            </li>
+                            <li class="pl ">
+                                <img src="assert/image/react_js.png" alt="" srcset="" class="m-1">
+                            </li>
+
+                            <li class="pl flex-wrap">
+                                <img src="assert/image/mysql.png" alt="" srcset="" class="m-1">
+                            </li>
+                            <li class="pl ">
+                                <img src="assert/image/python.png" alt="" srcset="" class="m-1">
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 mk">
+                    <div class="mt-4 figure">
+                        <img  src="assert/image/y.jpg" alt="" class="w-100 h-100  rounded lo">
+                    </div>
+                </div>
+               
+            </div>
+            <hr class="bop mt-5 mb-5">
+        </div>
+    
+    <!-- End background concept -->
+
+    <!-- Start title1 -->
+
+        <div class="container section-space">
+                <p class="mt-5" style="color: red;">FEATURE</p>
+                <p class="mt-3 display-3" style=" color: #c4cfde;"><b>What I Do</b></p>
+        </div>
+
+    <!-- End title1 -->
+
+    <!-- Start card -->
+        <div class="container mb-5">
+            <div class="row ">
+                <div class="col-sm-4 mt-5">
+                    <div class="card mycard p-5">
+                        <img src="assert/image/strategy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body mycard1">
+                            <h5 class="card-title ">Strategy</h5>
+                          <p class="card-text "> Brand Strategy, Product Strategy, Research & Analysis, Service Design, Content Strategy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-5">
+                    <div class="card mycard p-5">
+                        <img src="assert/image/Research.jpg" class="card-img-top" alt="...">
+                        <div class="card-body mycard1">
+                            <h5 class="card-title">Research</h5>
+                          <p class="card-text"> Qualitative Research, Quantitative Research, Heuristic Evaluation, Competitor Analysis, Usability Testing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-5">
+                    <div class="card mycard p-5" >
+                        <img src="assert/image/Design-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body mycard1">
+                            <h5 class="card-title">Design</h5>
+                          <p class="card-text mb-4"> User Interface, User Experience, Product Design, Branding & Illustration, Motion Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-sm-4 mt-5">
+                    <div class="card mycard p-5">
+                        <img src="assert/image/Growth.jpg" class="card-img-top" alt="...">
+                        <div class="card-body mycard1">
+                            <h5 class="card-title ">Growth</h5>
+                          <p class="card-text ">I throw myself down among the tall grass by the stream as Ilie close to the earth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-5">
+                    <div class="card mycard p-5">
+                        <img src="assert/image/CEO-Marketing.jpg" class="card-img-top" alt="...">
+                        <div class="card-body mycard1">
+                            <h5 class="card-title">CEO</h5>
+                          <p class="card-text">  We make tailor-made to increase for you to uncover all the potential opportunities!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-5">
+                    <div class="card mycard p-5" >
+                        <img src="assert/image/top.jpg" class="card-img-top" alt="...">
+                        <div class="card-body mycard1">
+                            <h5 class="card-title">Perfomance</h5>
+                          <p class="card-text mb-3">  I throw myself down among the tall grass by the stream as Ilie close to the earth. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="bop mt-5">
+        </div>
+    <!-- End card -->
+
+
+<!-- Start title1 -->
+
+    <div class="container section-space">
+        <p class="mt-5 text-center" style="color: red;">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</p>
+        <p class="mt-3 display-3 text-center"><b style=" color: #c4cfde;">My Portfolio</b></p>
+    </div>
+
+<!-- End title1 -->
+
+<!-- Start card -->
+<div class="container mb-5">
+    <div class="row ">
+        <div class="col-sm-4 mt-5">
+            <div class="card mycard p-5">
+                <img src="assert/image/portfolio-large.jpg" class="card-img-top" alt="...">
+                <div class="card-body mycard1">
+                    <h5 class="card-title ">Strategy</h5>
+                  <p class="card-text "> NFT Dashboard Application Development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mt-5">
+            <div class="card mycard p-5">
+                <img src="assert/image/portfolio-large-02.jpg" class="card-img-top" alt="...">
+                <div class="card-body mycard1">
+                    <h5 class="card-title">Research</h5>
+                  <p class="card-text"> Online Food Delivery Mobile App Design.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mt-5">
+            <div class="card mycard p-5" >
+                <img src="assert/image/portfolio-large-03.jpg" class="card-img-top" alt="...">
+                <div class="card-body mycard1">
+                    <h5 class="card-title">Design</h5>
+                  <p class="card-text "> Travel App Design Creativity & Application. </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-sm-4 mt-5">
+            <div class="card mycard p-5">
+                <img src="assert/image/portfolio-large-04.jpg" class="card-img-top" alt="...">
+                <div class="card-body mycard1">
+                    <h5 class="card-title ">Growth</h5>
+                  <p class="card-text ">Workout Website Design And Development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mt-5">
+            <div class="card mycard p-5">
+                <img src="assert/image/portfolio-large-05.jpg" class="card-img-top" alt="...">
+                <div class="card-body mycard1">
+                    <h5 class="card-title">CEO</h5>
+                  <p class="card-text"> Mobile Application Landing Page Design.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mt-5">
+            <div class="card mycard p-5" >
+                <img src="assert/image/portfolio-large-06.jpg" class="card-img-top" alt="...">
+                <div class="card-body mycard1">
+                    <h5 class="card-title">Perfomance</h5>
+                  <p class="card-text mb-">Restaurant Mobile Application Figma Design.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr class="bop mt-5">
+</div>
+<!-- End card -->
+
+
+<!-- Start title1 -->
+
+<div class="container section-space">
+    <p class="mt-5 text-center" style="color: red;">5+ MONTHS OF EXPERIENCE</p>
+    <p class="mt-3 display-3 text-center"><b style=" color: #c4cfde;">My Resume</b></p>
+</div>
+<!-- End title1 -->
+
+
+<!-- Start Resume  -->
+
+<div class="container mt-5 mb-5">
+    <div id="tabs-1">
+    <div class="d-flex">
+        <div class="col-sm-12 flex-wrap">
+            <ul class="d-flex flex-wrap as nav nav-tabs">
+                <li class=" sa p-5">
+                    <a href="#tabs-2" data-toggle="tab"  class=" active p-5 kl">Professional</a>
+                </li>
+                <li class=" sa p-5">
+                    <a href="#tabs-3" data-toggle="tab" class="  p-5 kl">Education</a>
+                </li>
+                <li class=" sa p-5">
+                    <a href="#tabs-4" data-toggle="tab" class="  p-5 kl">Experience</a>
+                </li>
+                <li class=" sa p-5">
+                    <a href="#tabs-5" data-toggle="tab" class="  p-5 kl">Project</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-3">
+                <div id="tabs-2" class="tab-pane fade show active">
+                        <div class="d-flex flex-wrap mt-5 tab-pane fade show active" id="tabs-2">
+                            <div class="col-sm-6  opp">
+                                <div>
+                                    <p class="mt-5" style="color: red;">Features</p>
+                                    <p class="mt-3 display-5 ">
+                                    <h2>
+                                        <b style=" color: #c4cfde;">Development  Skill</b>
+                                    </h2>
+</p></div>
+<div class="profile-list-main1">
+    <div class="mt-5 mb-3 profile-list1">
+
+        <div class="progress-charts">
+            <h6 class="heading heading-h6">HTML</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">100%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-charts mt-4">
+            <h6 class="heading heading-h6">CSS</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"><span class="percent-label1">90%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-charts mt-4">
+            <h6 class="heading heading-h6">JAVASCRIPT</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 75%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"><span class="percent-label2">75%</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="progress-charts mt-4">
+            <h6 class="heading heading-h6">CORE JAVA</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"><span class="percent-label3">90%</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</div>
+</div>
+<div class="col-sm-6 opp">
+    <div>
+        <p class="mt-5" style="color: red;">Features</p>
+        <p class="mt-3 display-5 ">
+        <h2>
+            <b style=" color: #c4cfde;">Development Skill</b>
+        </h2>
+</p></div>
+<div class="profile-list-main1">
+    <div class="mt-5 mb-3 profile-list1">
+
+        <div class="progress-charts">
+            <h6 class="heading heading-h6">BOOTSTRAP</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 100%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span class="percent-label">100%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-charts mt-4">
+            <h6 class="heading heading-h6">PYTHON</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 50%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"><span class="percent-label4">50%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-charts mt-4">
+            <h6 class="heading heading-h6">GITHUB</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 60%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"><span class="percent-label5">60%</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="progress-charts mt-4">
+            <h6 class="heading heading-h6">REACT-JS</h6>
+                <div class="progress">
+                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 90%; visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"><span class="percent-label3">90%</span>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+</div>
+                </div></div></div>
+                
+                <div id="tabs-3" class="tab-pane fade">
+                    <div class="d-flex flex-wrap mt-5 tab-pane fade show active" id="tabs-2">
+                        <div class="col-sm-6  opp">
+                            <div>
+                                <p class="mt-5" style="color: red;">2005 - 2024</p>
+                                <p class="mt-3 display-5 ">
+                                <h2>
+                                    <b style=" color: #c4cfde;">Education Quality</b>
+                                </h2>
+                </p></div>
+                <div class="profile-list-main">
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card  profile-list-main2">
+                            <div class="card-header">
+                                Master of Science in Information Technology
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Silver Oak University - (2022 - Present)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Silver Oak University attracted various recruiters for its 2022 placement session who offered a variety of job roles to the students across sectors, such as BFSI, IT, Education, FMCG, Consulting, and E-Commerce, etc.</p>
+                                <a href="#" class="btn btn-dark text-success">9.64/10</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card  profile-list-main2">
+                            <div class="card-header">
+                                Bachelor of Science in Information Technology
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Ganpat University - (2018 - 2021)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture..</p>
+                                <a href="#" class="btn btn-dark text-success">8.41/10</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card  profile-list-main2">
+                            <div class="card-header">
+                                Higher Secondary School<br>
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Nutan Vidya Vihar Higher Secondary School - (2017 - 2018)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale.</p>
+                                <a href="#" class="btn btn-dark text-success">65 %</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card  profile-list-main2">
+                            <div class="card-header">
+                                Secondary School<br>
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Nutan Vidya Vihar Higher Secondary School - (2016 - 2017)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale.</p>
+                                <a href="#" class="btn btn-dark text-success">43.33 %</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-6 opp">
+                    <div>
+                        <p class="mt-5" style="color: red;">2010 - 2022</p>
+                        <p class="mt-3 display-5 ">
+                        <h2>
+                            <b style=" color: #c4cfde;">Job Experience</b>
+                        </h2>
+                </p></div>
+                <div class="profile-list-main">
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Java Trainee
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Inexture Solutions - (Mar-2023 - Jul-2023)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Inexture imagine your dream software, create it. Our goal is to make your software development journey a breeze. From start to finish, we're committed to ensuring your project runs smoothly and exceeds your expectations. We're not happy until you are.</p>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Reactjs Trainee
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Phoneix Digital Solutions - (Jan-2024 - Pres)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Inexture imagine your dream software, create it. Our goal is to make your software development journey a breeze. From start to finish, we're committed to ensuring your project runs smoothly and exceeds your expectations. We're not happy until you are.</p>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></div></div>
+                
+                <div id="tabs-4" class="tab-pane fade">
+                    <div class="d-flex flex-wrap mt-5 tab-pane fade show active" id="tabs-2">
+                        <div class="col-sm-6  opp">
+                            <div>
+                                <p class="mt-5" style="color: red;">2023 - 2024</p>
+                                <p class="mt-3 display-5 ">
+                                <h2>
+                                    <b style=" color: #c4cfde;">Job Experience</b>
+                                </h2>
+                </p></div>
+                <div class="profile-list-main">
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Java Trainee
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Inexture Solutions - (Mar-2023 - Jul-2023)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Inexture imagine your dream software, create it. Our goal is to make your software development journey a breeze. From start to finish, we're committed to ensuring your project runs smoothly and exceeds your expectations. We're not happy until you are.</p>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Reactjs Trainee
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Phoneix Digital Solutions - (Jan-2024 - Pres)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Inexture imagine your dream software, create it. Our goal is to make your software development journey a breeze. From start to finish, we're committed to ensuring your project runs smoothly and exceeds your expectations. We're not happy until you are.</p>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-6 opp">
+                    <div>
+                        <p class="mt-5" style="color: red;">2010 - 2022</p>
+                        <p class="mt-3 display-5 ">
+                        <h2>
+                            <b style=" color: #c4cfde;">Trainer Experience</b>
+                        </h2>
+                </p></div>
+                <div class="profile-list-main">
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Java Trainee
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Inexture Solutions - (Mar-2023 - Jul-2023)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Inexture imagine your dream software, create it. Our goal is to make your software development journey a breeze. From start to finish, we're committed to ensuring your project runs smoothly and exceeds your expectations. We're not happy until you are.</p>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Reactjs Trainee
+                                            
+                                
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Phoneix Digital Solutions - (Jan-2024 - Pres)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">Inexture imagine your dream software, create it. Our goal is to make your software development journey a breeze. From start to finish, we're committed to ensuring your project runs smoothly and exceeds your expectations. We're not happy until you are.</p>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></div></div>
+
+                <div id="tabs-5" class="tab-pane fade">
+                    <div class="d-flex flex-wrap mt-5 tab-pane fade show active" id="tabs-2">
+                        <div class="col-sm-6  opp">
+                            <div>
+                                <p class="mt-5" style="color: red;">2021 - 2024</p>
+                                <p class="mt-3 display-5 ">
+                                <h2>
+                                    <b style=" color: #c4cfde;">Project Description</b>
+                                </h2>
+                </p></div>
+                <div class="profile-list-main">
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Tourism Management System
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Silver Oak University - (Jul-2023 - Nov-2023)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">A Tourism Management System is a comprehensive software solution 
+                                    designed to streamline and optimize the operations of businesses and 
+                                    organizations in the tourism and hospitality industry. It is a critical 
+                                    tool that helps manage and coordinate various aspects of the tourism 
+                                    sector, including hotels, travel agencies, tour operators, airlines, and 
+                                    other related businesses. The primary goal of such a system is to 
+                                    enhance the efficiency, customer experience, and profitability of 
+                                    tourism-related services.</p>
+                                    <ul class="mycard1">
+                                        <li class="text-danger"  style="font-size: 14px;">Technology:-<br></li>
+                                        <li><b>PHP , HTML5 , CSS3 , MYSQL</b></li>
+                                      </ul>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                House Hold Services
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Silver Oak University - (Jan-2023 - Jun-2023)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">
+                                    Household services have grown in importance as a potential 
+                                    area by formalizing personal and household services. 
+                                    Private households can be relieved from informal work and 
+                                    participate more strongly in the labor market.
+                                    We provide Home Cleaning, Pest Control, Painting, 
+                                    Appliances Repairing, Plumbing, Electrical, Carpentry using 
+                                    Online appointment Portal
+                                </p>
+                                    <ul class="mycard1">
+                                        <li class="text-danger"  style="font-size: 14px;">Technology:-<br></li>
+                                        <li><b>PHP , HTML5 , CSS3 , MYSQL</b></li>
+                                      </ul>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-6 opp">
+                    <div>
+                        <p class="mt-5" style="color: red;">2021 - 2024</p>
+                        <p class="mt-3 display-5 ">
+                        <h2>
+                            <b style=" color: #c4cfde;">Project Description</b>
+                        </h2>
+                </p></div>
+                <div class="profile-list-main">
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Age Calculator Services
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Silver Oak University - (Jul-2023 - Nov-2023)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">
+                                    The Age Calculator project aims to develop a user-friendly web application
+                                     that calculates a person's age based on the input provided by the user. 
+                                     Utilizing JavaScript programming language, this project will incorporate a 
+                                     responsive and interactive interface where users can input their birthdate.
+                                    Upon submission, the application will process the entered date, determine 
+                                    the user's current age by considering the current date, and display the result
+                                </p>
+                                    <ul class="mycard1">
+                                        <li class="text-danger"  style="font-size: 14px;">Technology:-<br></li>
+                                        <li><b>ANDROID , JAVASCRIPT, HTML5 , CSS3 , BOOTSTRAP</b></li>
+                                      </ul>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 mb-3 profile-list">
+                        <div class="card profile-list-main2">
+                            <div class="card-header">
+                                Tourism Management System
+                                <div class="d-flex align-item-center justify-content-between flex-wrap">
+                                    <p class="text-danger" style="font-size: 14px;">Silver Oak University - (Jul-2023 - Nov-2023)</p>
+                                    <span style="font-size: 14px;">Ahmedabad,India</span>
+                                </div>
+                            </div>
+                            <div class="card-body mycard1">
+                                <!-- <h5 class="card-title">Special title treatment</h5> -->
+                                <p class="card-text">A Tourism Management System is a comprehensive software solution 
+                                    designed to streamline and optimize the operations of businesses and 
+                                    organizations in the tourism and hospitality industry. It is a critical 
+                                    tool that helps manage and coordinate various aspects of the tourism 
+                                    sector, including hotels, travel agencies, tour operators, airlines, and 
+                                    other related businesses. The primary goal of such a system is to 
+                                    enhance the efficiency, customer experience, and profitability of 
+                                    tourism-related services.</p>
+                                    <ul class="mycard1">
+                                        <li class="text-danger"  style="font-size: 14px;">Technology:-<br></li>
+                                        <li><b>PHP , HTML5 , CSS3 , MYSQL</b></li>
+                                      </ul>
+                                <!-- <a href="#" class="btn btn-dark text-success">9.66/10</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div></div></div>
+                
+            </div>   
+        </div>
+    </div>
+    </div>
+    <hr class="bop mt-5 mb-5">
+</div>
+
+<!-- End Resume  -->
+
+
+<!-- start pricing bulid -->
+
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="col-sm-4  ">
+                <p class="mt-5" style="color: red;">Pricing</p>
+                <p class="mt-3 display-3" style=" color: #c4cfde;"><b>My Pricing</b></p>
+            </div>
+            <div class="col-sm-8 sd">
+                <div id="tabs-1">
+                    <div>
+                        <div class="">
+                            <ul class="d-flex flex-wrap asa nav nav-tabs">
+                                <li class=" sa p-3">
+                                    <a href="#tabs-6" data-toggle="tab"  class=" active p-5  kl">Static</a>
+                                </li>
+                                <li class=" sa p-3">
+                                    <a href="#tabs-7" data-toggle="tab" class=" p-5  kl">Standard</a>
+                                </li>
+                                <li class=" sa p-3">
+                                    <a href="#tabs-8" data-toggle="tab" class=" p-5  kl">Premium</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3">
+                                <div id="tabs-6" class="tab-pane fade show active">
+                                    <div class="card  mycard1 mt-5">
+                                        <div class="card-header">
+                                          <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="mt-3" style=" color: #c4cfde;"><b>Make Your Single Page</b></h3>
+                                                <span>Elementor / WPBakery</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-dark text-success p-1 mt-3"><h3 class="text-danger">$30.00</h3></a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title p-3">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessart</h5>
+                                          <div class="card-text">
+                                            <div class="d-flex flex-wrap justify-content-between">
+                                                <div class="col-sm-6 ">
+                                                    <ul style="font-size: 18px;">
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            1 Page with Elementor</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Customization</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Responsive Design</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Content Upload</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Customization</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            2 Plugins/Extensions</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <ul style="font-size: 18px;">
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Multipage Elementor</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Figma</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Maintaine Design</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Content Upload</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design With XD</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            8 Plugins/Extensions</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <a href="#" class="btn btn-dark text-danger h-100 w-100 mt-5">ORDER NOW <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                          </a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                    2 Days Delivery
+                                                </div>
+                                                <div>
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                    Unlimited Revission
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                      </div>
+
+                                </div>
+
+                                <div id="tabs-7" class="tab-pane fade ">
+                                    <div class="card  mycard1 mt-5">
+                                        <div class="card-header">
+                                          <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="mt-3" style=" color: #c4cfde;"><b>Make Your Single Page</b></h3>
+                                                <span>Elementor / WPBakery</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-dark text-success p-1 mt-3"><h3 class="text-danger">$50.00</h3></a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title p-3">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessart</h5>
+                                          <div class="card-text">
+                                            <div class="d-flex flex-wrap justify-content-between">
+                                                <div class="col-sm-6 ">
+                                                    <ul style="font-size: 18px;">
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            1 Page with Elementor</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Customization</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Responsive Design</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Content Upload</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Customization</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            2 Plugins/Extensions</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <ul style="font-size: 18px;">
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Multipage Elementor</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Figma</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Maintaine Design</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Content Upload</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design With XD</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            8 Plugins/Extensions</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <a href="#" class="btn btn-dark text-danger h-100 w-100 mt-5">ORDER NOW <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                          </a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                    2 Days Delivery
+                                                </div>
+                                                <div>
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                    Unlimited Revission
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                      </div>
+
+                                </div>
+
+
+                                <div id="tabs-8" class="tab-pane fade ">
+                                    <div class="card  mycard1 mt-5">
+                                        <div class="card-header">
+                                          <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="mt-3" style=" color: #c4cfde;"><b>Make Your Single Page</b></h3>
+                                                <span>Elementor / WPBakery</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-dark text-success p-1 mt-3"><h3 class="text-danger">$100.00</h3></a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title p-3">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessart</h5>
+                                          <div class="card-text">
+                                            <div class="d-flex  flex-wrap justify-content-between">
+                                                <div class="col-sm-6 ">
+                                                    <ul style="font-size: 18px;">
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            1 Page with Elementor</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Customization</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Responsive Design</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Content Upload</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Customization</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            2 Plugins/Extensions</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <ul style="font-size: 18px;">
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Multipage Elementor</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design Figma</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Maintaine Design</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Content Upload</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            Design With XD</li>
+                                                        <li class="p-1"><i class="fa fa-hand-o-right olk" aria-hidden="true"></i>
+                                                            8 Plugins/Extensions</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <a href="#" class="btn btn-dark text-danger h-100 w-100 mt-5">ORDER NOW <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                          </a>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                    2 Days Delivery
+                                                </div>
+                                                <div>
+                                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                    Unlimited Revission
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                      </div>
+
+                                </div>
+
+                                
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="bop mt-5">
+    </div>   
+    
+
+<!-- End pricing bulid -->
+
+<!-- Start title1 -->
+
+<div class="container section-space">
+    <p class="mt-5 text-center" style="color: red;">CONTACT</p>
+    <p class="mt-3 display-3 text-center"><b style=" color: #c4cfde;">Contact With Me</b></p>
+</div>
+<!-- End title1 -->
+
+
+<!-- start form  -->
+<div class=" container">
+    <div class="row d-flex">
+        <div class="col-sm-4 flex-wrap">
+            <div class="card plo" >
+                <img src="assert/image/contact1.png" class="card-img-top p-4 mycard1" alt="...">
+                <div class="card-body mycard1">
+                  <h5 class="card-title">YASH MAKWANA</h5>
+                  <p class="card-text">I am available for freelance work. Connect with me via and call in to my account..</p>
+                </div>
+                <ul class="list-group list-group-flush mycard1">
+                  <li class="list-group-item mycard1">Phone :-  <a href="tel:(+91) 8155993214" class="text-danger">(+91) 8155993214 </a></li>
+                  <li class="list-group-item mycard1">Email :-  <a class="header-top_email  text-danger" href="mailto:yashmakwana758@gmail.com" > yashmakwana758@gmail.com </a></li>
+                  <li class="list-group-item mycard1 mt-5">FIND WITH ME</li>
+                </ul>
+                <div class="card-body mycard1  ">
+                    <a href="https://www.linkedin.com/in/yash-makwana-9321041b5/" class="btn btn-dark m-4"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/y_a_s_h._.06/" class="btn btn-dark m-4"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/yash.makwana.773124" class="btn btn-dark m-4"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-8 mn">
+            <form class="mt-2">
+                <div class="form-row">
+                  <div class="form-group col-md-6 mt-4">
+                    <label for="inputEmail4">YOUR NAME</label>
+                    <input type="text" class="form-control form-control-lg io" id="inputEmail4" placeholder="">
+                  </div>
+                  <div class="form-group col-md-6 mt-4">
+                    <label for="inputPassword4">PHONE NUMBER</label>
+                    <input type="text" class="form-control  form-control-lg io" id="inputPassword4" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group mt-5">
+                  <label for="inputAddress">Email</label>
+                  <input type="Email" class="form-control  form-control-lg io" id="inputAddress" placeholder="">
+                </div>
+                <div class="form-group mt-5">
+                  <label for="inputAddress2">Address </label>
+                  <input type="text" class="form-control  form-control-lg io" id="inputAddress2" placeholder="">
+                </div>
+                <div class="form-group mt-5">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control  form-control-lg io" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="submit" class="btn btn-dark text-danger mt-5 w-100">Sign in</button>
+                </div>    
+            </form>    
+        </div>
+    </div>
+</div>
+<hr class="bop mt-5">
+<!-- end form -->
+
+
+<!-- start footer -->
+
+    <div class="container">
+        <p class="text-center p-5">
+            © 2023. All rights reserved by Yash Makwana-Resume
+        </p>
+    </div>
+
+<!-- End footer -->
+
+
+
+<script src="assert/js/style.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>     -->
+</body>
+</html>
